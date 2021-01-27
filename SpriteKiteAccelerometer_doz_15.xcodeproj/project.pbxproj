@@ -11,10 +11,10 @@
 		D623FD6E25C17D4E00EEA76C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D623FD6D25C17D4E00EEA76C /* GameScene.sks */; };
 		D623FD7025C17D4E00EEA76C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D623FD6F25C17D4E00EEA76C /* Actions.sks */; };
 		D623FD7225C17D4E00EEA76C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D623FD7125C17D4E00EEA76C /* GameScene.swift */; };
-		D623FD7425C17D4E00EEA76C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D623FD7325C17D4E00EEA76C /* GameViewController.swift */; };
 		D623FD7725C17D4E00EEA76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D623FD7525C17D4E00EEA76C /* Main.storyboard */; };
 		D623FD7925C17D5000EEA76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D623FD7825C17D5000EEA76C /* Assets.xcassets */; };
 		D623FD7C25C17D5000EEA76C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D623FD7A25C17D5000EEA76C /* LaunchScreen.storyboard */; };
+		D623FD8525C17D8500EEA76C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D623FD8425C17D8500EEA76C /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +23,11 @@
 		D623FD6D25C17D4E00EEA76C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		D623FD6F25C17D4E00EEA76C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		D623FD7125C17D4E00EEA76C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		D623FD7325C17D4E00EEA76C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D623FD7625C17D4E00EEA76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D623FD7825C17D5000EEA76C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D623FD7B25C17D5000EEA76C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D623FD7D25C17D5000EEA76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D623FD8425C17D8500EEA76C /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +61,24 @@
 			isa = PBXGroup;
 			children = (
 				D623FD6B25C17D4E00EEA76C /* AppDelegate.swift */,
-				D623FD6D25C17D4E00EEA76C /* GameScene.sks */,
-				D623FD6F25C17D4E00EEA76C /* Actions.sks */,
 				D623FD7125C17D4E00EEA76C /* GameScene.swift */,
-				D623FD7325C17D4E00EEA76C /* GameViewController.swift */,
+				D623FD8425C17D8500EEA76C /* GameViewController.swift */,
+				D623FD8325C17D6600EEA76C /* sks */,
 				D623FD7525C17D4E00EEA76C /* Main.storyboard */,
 				D623FD7825C17D5000EEA76C /* Assets.xcassets */,
 				D623FD7A25C17D5000EEA76C /* LaunchScreen.storyboard */,
 				D623FD7D25C17D5000EEA76C /* Info.plist */,
 			);
 			path = SpriteKiteAccelerometer_doz_15;
+			sourceTree = "<group>";
+		};
+		D623FD8325C17D6600EEA76C /* sks */ = {
+			isa = PBXGroup;
+			children = (
+				D623FD6D25C17D4E00EEA76C /* GameScene.sks */,
+				D623FD6F25C17D4E00EEA76C /* Actions.sks */,
+			);
+			path = sks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D623FD7225C17D4E00EEA76C /* GameScene.swift in Sources */,
-				D623FD7425C17D4E00EEA76C /* GameViewController.swift in Sources */,
+				D623FD8525C17D8500EEA76C /* GameViewController.swift in Sources */,
 				D623FD6C25C17D4E00EEA76C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TXM23JGPB;
 				INFOPLIST_FILE = SpriteKiteAccelerometer_doz_15/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TXM23JGPB;
 				INFOPLIST_FILE = SpriteKiteAccelerometer_doz_15/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

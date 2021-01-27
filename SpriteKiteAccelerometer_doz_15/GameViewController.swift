@@ -1,8 +1,8 @@
 //
 //  GameViewController.swift
-//  SpriteKiteAccelerometer_doz_15
+//  FirstSpriteKit_doz_14
 //
-//  Created by Alexander Hoch on 27.01.21.
+//  Created by Alexander Hoch on 26.01.21.
 //  Copyright © 2021 zancor. All rights reserved.
 //
 
@@ -17,13 +17,13 @@ class GameViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            let scene = GameScene()
                 // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
+                scene.scaleMode = .resizeFill
                 
                 // Present the scene
                 view.presentScene(scene)
-            }
+            
             
             view.ignoresSiblingOrder = true
             
